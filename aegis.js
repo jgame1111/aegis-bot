@@ -30,7 +30,7 @@ const antiSpam = new AntiSpam({
     // And many more options... See the documentation.
 });
 
-client.login(config.token);
+client.login(process.env.TOKEN);
 
 const sequelize = new Sequelize("database", "user", "password", {
     host: "localhost",
